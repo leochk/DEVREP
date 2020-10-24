@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<turtle:Stage
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:turtle="http:///turtle.ecore"
+    xsi:schemaLocation="http:///turtle.ecore turtle.ecore"
+    height="600"
+    width="300"
+    backgroundColor="//@color">
+  <color red="100"
+      blue="80"
+      green="75"/>
+  <choreographies
+      name="la capoera">
+    <actions
+        xsi:type="turtle:SetPen"
+        target="//@farms.0/@turtles.0"
+        state="DOWN"/>
+    <actions
+        xsi:type="turtle:Forward"
+        target="//@farms.0/@turtles.0"
+        length="100"/>
+    <actions
+        xsi:type="turtle:SetPen"
+        target="//@farms.0/@turtles.0"/>
+  </choreographies>
+  <farms name="Stade de france">
+    <turtles
+        name="Franklyn"/>
+  </farms>
+</turtle:Stage>
