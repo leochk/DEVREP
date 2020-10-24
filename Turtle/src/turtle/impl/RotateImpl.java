@@ -69,7 +69,6 @@ public class RotateImpl extends ActionImpl implements Rotate {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public float getAngle() {
 		return angle;
 	}
@@ -79,7 +78,6 @@ public class RotateImpl extends ActionImpl implements Rotate {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setAngle(float newAngle) {
 		float oldAngle = angle;
 		angle = newAngle;
@@ -154,7 +152,7 @@ public class RotateImpl extends ActionImpl implements Rotate {
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuilder result = new StringBuilder(super.toString());
+		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (angle: ");
 		result.append(angle);
 		result.append(')');

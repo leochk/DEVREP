@@ -41,7 +41,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference turtle.ecore#//Stage/choreographies"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference turtle.ecore#//Stage/farms"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference turtle.ecore#//Stage/backgroundColor"/>
-      <genOperations ecoreOperation="turtle.ecore#//Stage/display" body="StringBuilder sb = new StringBuilder();&#xA;sb.append(this.toString()).&#xA;append(&quot;\n&quot;).&#xA;append(&quot;Choreographies: &quot;).&#xA;append(choreographies.toString()).&#xA;append(&quot;\n&quot;).&#xA;append(&quot;Farms: &quot;).&#xA;append(farms.toString());&#xA;return sb.toString();"/>
+      <genOperations ecoreOperation="turtle.ecore#//Stage/display"/>
     </genClasses>
     <genClasses ecoreClass="turtle.ecore#//Color">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute turtle.ecore#//Color/red"/>

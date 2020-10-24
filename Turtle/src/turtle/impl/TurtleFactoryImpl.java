@@ -107,7 +107,6 @@ public class TurtleFactoryImpl extends EFactoryImpl implements TurtleFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Turtle createTurtle() {
 		TurtleImpl turtle = new TurtleImpl();
 		return turtle;
@@ -118,7 +117,6 @@ public class TurtleFactoryImpl extends EFactoryImpl implements TurtleFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Forward createForward() {
 		ForwardImpl forward = new ForwardImpl();
 		return forward;
@@ -129,7 +127,6 @@ public class TurtleFactoryImpl extends EFactoryImpl implements TurtleFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Choreography createChoreography() {
 		ChoreographyImpl choreography = new ChoreographyImpl();
 		return choreography;
@@ -140,7 +137,6 @@ public class TurtleFactoryImpl extends EFactoryImpl implements TurtleFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Farm createFarm() {
 		FarmImpl farm = new FarmImpl();
 		return farm;
@@ -151,7 +147,6 @@ public class TurtleFactoryImpl extends EFactoryImpl implements TurtleFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Rotate createRotate() {
 		RotateImpl rotate = new RotateImpl();
 		return rotate;
@@ -162,7 +157,6 @@ public class TurtleFactoryImpl extends EFactoryImpl implements TurtleFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SetPen createSetPen() {
 		SetPenImpl setPen = new SetPenImpl();
 		return setPen;
@@ -173,7 +167,6 @@ public class TurtleFactoryImpl extends EFactoryImpl implements TurtleFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Stage createStage() {
 		StageImpl stage = new StageImpl();
 		return stage;
@@ -184,7 +177,6 @@ public class TurtleFactoryImpl extends EFactoryImpl implements TurtleFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Color createColor() {
 		ColorImpl color = new ColorImpl();
 		return color;
@@ -195,7 +187,6 @@ public class TurtleFactoryImpl extends EFactoryImpl implements TurtleFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ColouredTurtle createColouredTurtle() {
 		ColouredTurtleImpl colouredTurtle = new ColouredTurtleImpl();
 		return colouredTurtle;
@@ -206,7 +197,6 @@ public class TurtleFactoryImpl extends EFactoryImpl implements TurtleFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ColouredEntity createColouredEntity() {
 		ColouredEntityImpl colouredEntity = new ColouredEntityImpl();
 		return colouredEntity;
@@ -237,7 +227,6 @@ public class TurtleFactoryImpl extends EFactoryImpl implements TurtleFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public TurtlePackage getTurtlePackage() {
 		return (TurtlePackage)getEPackage();
 	}

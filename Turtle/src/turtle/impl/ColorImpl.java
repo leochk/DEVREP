@@ -133,7 +133,6 @@ public class ColorImpl extends MinimalEObjectImpl.Container implements Color {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public byte getRed() {
 		return red;
 	}
@@ -143,7 +142,6 @@ public class ColorImpl extends MinimalEObjectImpl.Container implements Color {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setRed(byte newRed) {
 		byte oldRed = red;
 		red = newRed;
@@ -156,7 +154,6 @@ public class ColorImpl extends MinimalEObjectImpl.Container implements Color {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public byte getBlue() {
 		return blue;
 	}
@@ -166,7 +163,6 @@ public class ColorImpl extends MinimalEObjectImpl.Container implements Color {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setBlue(byte newBlue) {
 		byte oldBlue = blue;
 		blue = newBlue;
@@ -179,7 +175,6 @@ public class ColorImpl extends MinimalEObjectImpl.Container implements Color {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public byte getGreen() {
 		return green;
 	}
@@ -189,7 +184,6 @@ public class ColorImpl extends MinimalEObjectImpl.Container implements Color {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setGreen(byte newGreen) {
 		byte oldGreen = green;
 		green = newGreen;
@@ -202,7 +196,6 @@ public class ColorImpl extends MinimalEObjectImpl.Container implements Color {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public byte getAlpha() {
 		return alpha;
 	}
@@ -212,7 +205,6 @@ public class ColorImpl extends MinimalEObjectImpl.Container implements Color {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setAlpha(byte newAlpha) {
 		byte oldAlpha = alpha;
 		alpha = newAlpha;
@@ -317,7 +309,7 @@ public class ColorImpl extends MinimalEObjectImpl.Container implements Color {
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuilder result = new StringBuilder(super.toString());
+		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (red: ");
 		result.append(red);
 		result.append(", blue: ");

@@ -74,7 +74,6 @@ public class TurtleImpl extends MinimalEObjectImpl.Container implements Turtle {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Farm getFarm() {
 		if (eContainerFeatureID() != TurtlePackage.TURTLE__FARM) return null;
 		return (Farm)eInternalContainer();
@@ -85,7 +84,6 @@ public class TurtleImpl extends MinimalEObjectImpl.Container implements Turtle {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getName() {
 		return name;
 	}
@@ -95,7 +93,6 @@ public class TurtleImpl extends MinimalEObjectImpl.Container implements Turtle {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -218,7 +215,7 @@ public class TurtleImpl extends MinimalEObjectImpl.Container implements Turtle {
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuilder result = new StringBuilder(super.toString());
+		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (name: ");
 		result.append(name);
 		result.append(')');

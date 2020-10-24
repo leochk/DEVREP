@@ -137,7 +137,6 @@ public class StageImpl extends ColouredEntityImpl implements Stage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public int getHeight() {
 		return height;
 	}
@@ -147,7 +146,6 @@ public class StageImpl extends ColouredEntityImpl implements Stage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setHeight(int newHeight) {
 		int oldHeight = height;
 		height = newHeight;
@@ -160,7 +158,6 @@ public class StageImpl extends ColouredEntityImpl implements Stage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public int getWidth() {
 		return width;
 	}
@@ -170,7 +167,6 @@ public class StageImpl extends ColouredEntityImpl implements Stage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setWidth(int newWidth) {
 		int oldWidth = width;
 		width = newWidth;
@@ -183,7 +179,6 @@ public class StageImpl extends ColouredEntityImpl implements Stage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<Choreography> getChoreographies() {
 		if (choreographies == null) {
 			choreographies = new EObjectContainmentWithInverseEList<Choreography>(Choreography.class, this, TurtlePackage.STAGE__CHOREOGRAPHIES, TurtlePackage.CHOREOGRAPHY__STAGE);
@@ -196,7 +191,6 @@ public class StageImpl extends ColouredEntityImpl implements Stage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<Farm> getFarms() {
 		if (farms == null) {
 			farms = new EObjectContainmentWithInverseEList<Farm>(Farm.class, this, TurtlePackage.STAGE__FARMS, TurtlePackage.FARM__STAGES);
@@ -209,7 +203,6 @@ public class StageImpl extends ColouredEntityImpl implements Stage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Color getBackgroundColor() {
 		if (backgroundColor != null && backgroundColor.eIsProxy()) {
 			InternalEObject oldBackgroundColor = (InternalEObject)backgroundColor;
@@ -236,7 +229,6 @@ public class StageImpl extends ColouredEntityImpl implements Stage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setBackgroundColor(Color newBackgroundColor) {
 		Color oldBackgroundColor = backgroundColor;
 		backgroundColor = newBackgroundColor;
@@ -249,7 +241,6 @@ public class StageImpl extends ColouredEntityImpl implements Stage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String display() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(this.toString()).
@@ -420,7 +411,7 @@ public class StageImpl extends ColouredEntityImpl implements Stage {
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuilder result = new StringBuilder(super.toString());
+		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (height: ");
 		result.append(height);
 		result.append(", width: ");

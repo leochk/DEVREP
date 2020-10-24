@@ -70,7 +70,6 @@ public class SetPenImpl extends ActionImpl implements SetPen {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PenState getState() {
 		return state;
 	}
@@ -80,7 +79,6 @@ public class SetPenImpl extends ActionImpl implements SetPen {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setState(PenState newState) {
 		PenState oldState = state;
 		state = newState == null ? STATE_EDEFAULT : newState;
@@ -155,7 +153,7 @@ public class SetPenImpl extends ActionImpl implements SetPen {
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuilder result = new StringBuilder(super.toString());
+		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (state: ");
 		result.append(state);
 		result.append(')');

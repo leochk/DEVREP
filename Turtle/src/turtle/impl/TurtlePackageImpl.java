@@ -145,7 +145,7 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 *
+	 * 
 	 * <p>This method is used to initialize {@link TurtlePackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -159,8 +159,7 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 		if (isInited) return (TurtlePackage)EPackage.Registry.INSTANCE.getEPackage(TurtlePackage.eNS_URI);
 
 		// Obtain or create and register package
-		Object registeredTurtlePackage = EPackage.Registry.INSTANCE.get(eNS_URI);
-		TurtlePackageImpl theTurtlePackage = registeredTurtlePackage instanceof TurtlePackageImpl ? (TurtlePackageImpl)registeredTurtlePackage : new TurtlePackageImpl();
+		TurtlePackageImpl theTurtlePackage = (TurtlePackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof TurtlePackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new TurtlePackageImpl());
 
 		isInited = true;
 
@@ -173,6 +172,7 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 		// Mark meta-data to indicate it can't be changed
 		theTurtlePackage.freeze();
 
+  
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(TurtlePackage.eNS_URI, theTurtlePackage);
 		return theTurtlePackage;
@@ -183,7 +183,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EClass getTurtle() {
 		return turtleEClass;
 	}
@@ -193,7 +192,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EReference getTurtle_Farm() {
 		return (EReference)turtleEClass.getEStructuralFeatures().get(0);
 	}
@@ -203,7 +201,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getTurtle_Name() {
 		return (EAttribute)turtleEClass.getEStructuralFeatures().get(1);
 	}
@@ -213,7 +210,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EClass getAction() {
 		return actionEClass;
 	}
@@ -223,7 +219,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EReference getAction_Target() {
 		return (EReference)actionEClass.getEStructuralFeatures().get(0);
 	}
@@ -233,7 +228,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EClass getForward() {
 		return forwardEClass;
 	}
@@ -243,7 +237,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getForward_Length() {
 		return (EAttribute)forwardEClass.getEStructuralFeatures().get(0);
 	}
@@ -253,7 +246,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EClass getChoreography() {
 		return choreographyEClass;
 	}
@@ -263,7 +255,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EReference getChoreography_Actions() {
 		return (EReference)choreographyEClass.getEStructuralFeatures().get(0);
 	}
@@ -273,7 +264,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EReference getChoreography_Stage() {
 		return (EReference)choreographyEClass.getEStructuralFeatures().get(1);
 	}
@@ -283,7 +273,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getChoreography_Name() {
 		return (EAttribute)choreographyEClass.getEStructuralFeatures().get(2);
 	}
@@ -293,7 +282,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EClass getFarm() {
 		return farmEClass;
 	}
@@ -303,7 +291,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EReference getFarm_Turtles() {
 		return (EReference)farmEClass.getEStructuralFeatures().get(0);
 	}
@@ -313,7 +300,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EReference getFarm_Stages() {
 		return (EReference)farmEClass.getEStructuralFeatures().get(1);
 	}
@@ -323,7 +309,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getFarm_Name() {
 		return (EAttribute)farmEClass.getEStructuralFeatures().get(2);
 	}
@@ -333,7 +318,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EClass getRotate() {
 		return rotateEClass;
 	}
@@ -343,7 +327,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getRotate_Angle() {
 		return (EAttribute)rotateEClass.getEStructuralFeatures().get(0);
 	}
@@ -353,7 +336,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EClass getSetPen() {
 		return setPenEClass;
 	}
@@ -363,7 +345,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getSetPen_State() {
 		return (EAttribute)setPenEClass.getEStructuralFeatures().get(0);
 	}
@@ -373,7 +354,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EClass getStage() {
 		return stageEClass;
 	}
@@ -383,7 +363,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getStage_Height() {
 		return (EAttribute)stageEClass.getEStructuralFeatures().get(0);
 	}
@@ -393,7 +372,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getStage_Width() {
 		return (EAttribute)stageEClass.getEStructuralFeatures().get(1);
 	}
@@ -403,7 +381,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EReference getStage_Choreographies() {
 		return (EReference)stageEClass.getEStructuralFeatures().get(2);
 	}
@@ -413,7 +390,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EReference getStage_Farms() {
 		return (EReference)stageEClass.getEStructuralFeatures().get(3);
 	}
@@ -423,7 +399,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EReference getStage_BackgroundColor() {
 		return (EReference)stageEClass.getEStructuralFeatures().get(4);
 	}
@@ -433,7 +408,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EOperation getStage__Display() {
 		return stageEClass.getEOperations().get(0);
 	}
@@ -443,7 +417,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EClass getColor() {
 		return colorEClass;
 	}
@@ -453,7 +426,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getColor_Red() {
 		return (EAttribute)colorEClass.getEStructuralFeatures().get(0);
 	}
@@ -463,7 +435,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getColor_Blue() {
 		return (EAttribute)colorEClass.getEStructuralFeatures().get(1);
 	}
@@ -473,7 +444,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getColor_Green() {
 		return (EAttribute)colorEClass.getEStructuralFeatures().get(2);
 	}
@@ -483,7 +453,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EAttribute getColor_Alpha() {
 		return (EAttribute)colorEClass.getEStructuralFeatures().get(3);
 	}
@@ -493,7 +462,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EClass getColouredTurtle() {
 		return colouredTurtleEClass;
 	}
@@ -503,7 +471,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EClass getColouredEntity() {
 		return colouredEntityEClass;
 	}
@@ -513,7 +480,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EReference getColouredEntity_Color() {
 		return (EReference)colouredEntityEClass.getEStructuralFeatures().get(0);
 	}
@@ -523,7 +489,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EEnum getPenState() {
 		return penStateEEnum;
 	}
@@ -533,7 +498,6 @@ public class TurtlePackageImpl extends EPackageImpl implements TurtlePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public TurtleFactory getTurtleFactory() {
 		return (TurtleFactory)getEFactoryInstance();
 	}

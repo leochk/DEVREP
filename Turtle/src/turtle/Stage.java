@@ -142,7 +142,7 @@ public interface Stage extends ColouredEntity {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model
+	 * @model annotation="http://www.eclipse.org/emf/2002/GenModel body='StringBuilder sb = new StringBuilder();\nsb.append(this.toString()).\nappend(\"\\n\").\nappend(\"Choreographies: \").\nappend(choreographies.toString()).\nappend(\"\\n\").\nappend(\"Farms: \").\nappend(farms.toString());\nreturn sb.toString();'"
 	 * @generated
 	 */
 	String display();

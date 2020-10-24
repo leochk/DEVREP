@@ -93,7 +93,6 @@ public class ChoreographyImpl extends MinimalEObjectImpl.Container implements Ch
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<Action> getActions() {
 		if (actions == null) {
 			actions = new EObjectContainmentEList<Action>(Action.class, this, TurtlePackage.CHOREOGRAPHY__ACTIONS);
@@ -106,7 +105,6 @@ public class ChoreographyImpl extends MinimalEObjectImpl.Container implements Ch
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Stage getStage() {
 		if (eContainerFeatureID() != TurtlePackage.CHOREOGRAPHY__STAGE) return null;
 		return (Stage)eInternalContainer();
@@ -117,7 +115,6 @@ public class ChoreographyImpl extends MinimalEObjectImpl.Container implements Ch
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getName() {
 		return name;
 	}
@@ -127,7 +124,6 @@ public class ChoreographyImpl extends MinimalEObjectImpl.Container implements Ch
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -264,7 +260,7 @@ public class ChoreographyImpl extends MinimalEObjectImpl.Container implements Ch
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuilder result = new StringBuilder(super.toString());
+		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (name: ");
 		result.append(name);
 		result.append(')');

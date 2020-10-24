@@ -63,7 +63,6 @@ public class ColouredEntityImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Color getColor() {
 		return color;
 	}
@@ -88,7 +87,6 @@ public class ColouredEntityImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setColor(Color newColor) {
 		if (newColor != color) {
 			NotificationChain msgs = null;

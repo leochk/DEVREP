@@ -93,7 +93,6 @@ public class FarmImpl extends MinimalEObjectImpl.Container implements Farm {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<Turtle> getTurtles() {
 		if (turtles == null) {
 			turtles = new EObjectContainmentWithInverseEList<Turtle>(Turtle.class, this, TurtlePackage.FARM__TURTLES, TurtlePackage.TURTLE__FARM);
@@ -106,7 +105,6 @@ public class FarmImpl extends MinimalEObjectImpl.Container implements Farm {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Stage getStages() {
 		if (eContainerFeatureID() != TurtlePackage.FARM__STAGES) return null;
 		return (Stage)eInternalContainer();
@@ -117,7 +115,6 @@ public class FarmImpl extends MinimalEObjectImpl.Container implements Farm {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getName() {
 		return name;
 	}
@@ -127,7 +124,6 @@ public class FarmImpl extends MinimalEObjectImpl.Container implements Farm {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -267,7 +263,7 @@ public class FarmImpl extends MinimalEObjectImpl.Container implements Farm {
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuilder result = new StringBuilder(super.toString());
+		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (name: ");
 		result.append(name);
 		result.append(')');

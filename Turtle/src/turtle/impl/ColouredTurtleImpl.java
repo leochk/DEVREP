@@ -63,7 +63,6 @@ public class ColouredTurtleImpl extends TurtleImpl implements ColouredTurtle {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Color getColor() {
 		return color;
 	}
@@ -88,7 +87,6 @@ public class ColouredTurtleImpl extends TurtleImpl implements ColouredTurtle {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setColor(Color newColor) {
 		if (newColor != color) {
 			NotificationChain msgs = null;

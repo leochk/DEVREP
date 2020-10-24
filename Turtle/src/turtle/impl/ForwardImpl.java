@@ -69,7 +69,6 @@ public class ForwardImpl extends ActionImpl implements Forward {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public int getLength() {
 		return length;
 	}
@@ -79,7 +78,6 @@ public class ForwardImpl extends ActionImpl implements Forward {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public void setLength(int newLength) {
 		int oldLength = length;
 		length = newLength;
@@ -154,7 +152,7 @@ public class ForwardImpl extends ActionImpl implements Forward {
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuilder result = new StringBuilder(super.toString());
+		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (length: ");
 		result.append(length);
 		result.append(')');
