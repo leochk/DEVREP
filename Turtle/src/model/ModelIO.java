@@ -74,7 +74,7 @@ public final class ModelIO {
 		System.out.println(e.display());
 		EList<Choreography> c = e.getChoreographies();
 		for (Choreography i : c) {
-			i.getActions().get(0).getClass().
+			
 		}
 	}
 	
