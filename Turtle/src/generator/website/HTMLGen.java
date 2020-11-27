@@ -2,7 +2,7 @@ package generator.website;
 
 import java.io.File;
 
-import model.ModelIO;
+import modelio.ModelIO;
 import turtle.Stage;
 
 public class HTMLGen {
